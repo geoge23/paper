@@ -1,0 +1,17 @@
+{
+  "name": "paper",
+  "version": "1.0.0",
+  "description": "Sets beautiful wallpapers from across the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "George Parks",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^8.2.3",
+    "menubar": "^8.0.1",
+    "wallpaper": "^4.4.1"
+  }
+}
