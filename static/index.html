@@ -5,34 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paper</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
 </head>
 <body>
     <div class="topBar">
         <div class="left">
-            <p>Paper<span>Beautiful wallpapers</span></spam></p>
+            <p>Paper<span>Beautiful wallpapers</span></p>
         </div>
         <div class="right">
-            <img src="./icons/more-horizontal.svg" alt="">
+            <div id="dropdown">
+                <img src="./icons/more-horizontal.svg" alt="">
+                <div id="dropdown-content">
+                    <ul>
+                        <li>Settings</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="body">
         <div class="left">
             <div class="info">
-                <p>You're viewing</p>
+                <p id="workViewing">You're viewing</p>
                 <h1 id="workName">Bruh moment</h1>
                 <p id="workArtist">by Bill Nye from Unsplash</p>
             </div>
             <div class="controls">
                 <button id="play"><img src="./icons/play.svg" alt=""></button>
+                <button id="view"><img src="./icons/eye.svg" alt=""></button>
+                <button id="stop"><img src="./icons/stop.svg" alt=""></button>
             </div>
         </div>
         <div class="right">
-            <div id="button">
-                <img src="./icons/power.svg" alt="">
-            </div>
+            <img id="image" src="https://images.unsplash.com/photo-1589708658790-d49a4aa1d4e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="">
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

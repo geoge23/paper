@@ -1,0 +1,15 @@
+{
+    "name": "Unsplash",
+    "url": "https://api.unsplash.com/photos/random",
+    "auth": "",
+    "parameters": {
+        "orientation": "landscape",
+        "featured": "true",
+        "content_filter": "high",
+        "client_id": "TV6mXIFxlOjT7ZLYwXsuXkGB5wTVhbqZhjdGRHWI66U"
+    },
+    "requires-download": true,
+    "response-path": ["urls", "full"],
+    "can-get-attributions": true,
+    "attribution-path": ["user", "name"]
+}
