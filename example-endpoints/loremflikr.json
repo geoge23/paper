@@ -1,0 +1,12 @@
+{
+    "name": "Flickr",
+    "url": "https://loremflickr.com/json/1920/1080",
+    "auth": "",
+    "parameters": {
+
+    },
+    "requires-download": true,
+    "response-path": ["file"],
+    "can-get-attributions": true,
+    "attribution-path": ["owner"]
+}

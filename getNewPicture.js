@@ -4,10 +4,7 @@ const PathNode = require('path');
 const { handleAttribution, getUrlFromPath } = require("./helperFunctions");
 
 async function getNewPicture(provider) {
-    let path = PathNode.format({
-        dir: global.appPath,
-        base: `${provider}.json`
-    });
+    let path = PathNode.resolve(global.appPath, 'providers', `${provider}.json`)
     let info = JSON.parse(fs.readFileSync(path));
     const image = await axios({
         method: 'get',

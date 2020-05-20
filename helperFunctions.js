@@ -1,3 +1,7 @@
+const wallpaper = require('wallpaper');
+const NodePath = require('path')
+const fs = require('fs')
+
 function getUrlFromPath(image, info) {
     let path;
     if (info["response-path"]) {
@@ -28,3 +32,14 @@ function handleAttribution(image, info) {
     }
 }
 exports.handleAttribution = handleAttribution;
+
+function handlePicture(data) {
+    return new Promise((resolve, reject) => {
+        let file = NodePath.resolve(global.appPath, "pic.jpg")
+        fs.writeFileSync(file, data)
+        wallpaper.set(file)
+            .catch(e => reject(e))
+            .then(() => resolve())
+    })
+}
+exports.handlePicture = handlePicture

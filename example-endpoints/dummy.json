@@ -1,0 +1,11 @@
+{
+    "name": "Dummy",
+    "url": "https://inteng-storage.s3.amazonaws.com/img/iea/zBwgmajpGK/sizes/speed-test-tools_resize_md.jpg",
+    "auth": "",
+    "parameters": {
+    },
+    "requires-download": false,
+    "response-path": ["urls", "full"],
+    "can-get-attributions": false,
+    "attribution-path": ["user", "name"]
+}

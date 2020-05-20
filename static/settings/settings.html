@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="topBar">
+        <p>Settings</p>
+    </div>
+    <form>
+        <div class="settings">
+            <div class="label">Choose a photo provider<span style="font-size: 10px;"><br>Hint: You can add custom providers in %appdata%/paper/providers</span></div>
+            <div class="select">
+                <select name="provider" id="provider">
+                    <!-- <option value="test">test</option> -->
+                </select>
+            </div>
+            <div class="label">Load another photo when app opens</div>
+            <div class="switch">
+                <input type="checkbox" id="willGetPhotoOnLaunch">
+                <span class="slider"></span>
+            </div>
+            <div class="label">Launch on startup</div>
+            <div class="switch">
+                <input type="checkbox" id="willLaunchOnStartup">
+                <span class="slider"></span>
+            </div>
+            <div class="label">Reload every (seconds)</div>
+            <div class="number">
+                <input type="number" id="timerInterval">
+            </div>
+            <div class="submit">
+                <button>Save</button>
+                <p onclick="remote.getCurrentWindow().destroy()">Cancel</p>
+            </div>
+        </div>
+    </form>
+    <script src="settings.js"></script>
+</body>
+</html>
