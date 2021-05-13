@@ -12,7 +12,7 @@
   "dependencies": {
     "auto-launch": "^5.0.5",
     "axios": "^0.21.1",
-    "electron": "^8.2.3",
+    "electron": "^9.4.0",
     "electron-config": "^2.0.0",
     "menubar": "^8.0.1",
     "wallpaper": "^4.4.1"
